@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Blakletterpress</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        .register-box{
+            background:#f5f1e8;
+            padding:25px 35px;
+            border:1px solid #d8cdb8;
+        }
+        .register-box h1{
+            color:#8a6324;
+            font-size:36px;
+            margin-bottom:10px;
+        }
+        .register-box p{margin-bottom:20px;}
+        fieldset{
+            border:1px solid #999;
+            margin-bottom:18px;
+            padding:15px;
+        }
+        legend{font-weight:bold;color:#5a4217;}
+        .row{margin-bottom:12px;}
+        label{
+            display:block;
+            font-weight:bold;
+            margin-bottom:5px;
+        }
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=number],
+        input[type=date],
+        select,
+        textarea{
+            width:320px;
+            padding:6px;
+            border:1px solid #999;
+        }
+        textarea{height:80px;resize:vertical;}
+        .inline label{
+            display:inline;
+            font-weight:normal;
+            margin-right:15px;
+        }
+        .buttons input{
+            background:#2f9b2f;
+            color:#fff;
+            border:1px solid #1b6e1b;
+            padding:8px 18px;
+            cursor:pointer;
+            margin-right:10px;
+        }
+    </style>
+</head>
+<body>
+<div id="page">
+
+    <div id="header">
+        <div id="motto">
+            <a href="index.html" class="sitename"><img src="images/blakletterpress.png" height="24" width="142" alt="SiteName"></a>
+            <p><img src="images/header-text.png" height="14" width="218" alt="Text"></p>
+        </div>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+        </div>
+        <div id="searchbar">
+            <form action="#" method="post">
+                <input type="text" value="Enter search query" class="txtfield">
+                <input type="submit" value="Search" class="btn">
+            </form>
+        </div>
+    </div>
+
+    <div id="contents">
+
+        <div id="main">
+            <div class="body register-box">
+
+                <h1>Đăng ký nhận thông tin</h1>
+                <p>Điền thông tin bên dưới để nhận bản tin định kỳ. Các trường có dấu * là bắt buộc.</p>
+
+                <form>
+
+                    <fieldset>
+                        <legend>Thông tin tài khoản</legend>
+
+                        <div class="row">
+                            <label>Họ và tên *</label>
+                            <input type="text" placeholder="Nguyễn Văn A" required>
+                        </div>
+
+                        <div class="row">
+                            <label>Email *</label>
+                            <input type="email" placeholder="ban@example.com" required>
+                        </div>
+
+                        <div class="row">
+                            <label>Mật khẩu *</label>
+                            <input type="password" minlength="8" required>
+                        </div>
+
+                        <div class="row">
+                            <label>Số điện thoại *</label>
+                            <input type="text" maxlength="10" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Thông tin cá nhân</legend>
+
+                        <div class="row">
+                            <label>Ngày sinh *</label>
+                            <input type="date" required>
+                        </div>
+
+                        <div class="row">
+                            <label>Độ tuổi *</label>
+                            <input type="number" min="1" max="120" style="width:120px;" required>
+                        </div>
+
+                        <div class="row inline">
+                            <label>Giới tính *</label><br>
+                            <label><input type="radio" name="gender" required> Nam</label>
+                            <label><input type="radio" name="gender"> Nữ</label>
+                            <label><input type="radio" name="gender"> Khác</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Tùy chọn nhận tin</legend>
+
+                        <div class="row inline">
+                            <label>Chủ đề quan tâm</label><br>
+                            <label><input type="checkbox"> Tin tức</label>
+                            <label><input type="checkbox"> Blog</label>
+                            <label><input type="checkbox"> Sự kiện</label>
+                        </div>
+
+                        <div class="row">
+                            <label>Khu vực</label>
+                            <select>
+                                <option>-- Chọn khu vực --</option>
+                                <option>Miền Bắc</option>
+                                <option>Miền Trung</option>
+                                <option>Miền Nam</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label>Lời nhắn</label>
+                            <textarea placeholder="Bạn muốn nhận nội dung gì?"></textarea>
+                        </div>
+
+                        <div class="row">
+                            <label><input type="checkbox" required> Tôi đồng ý với điều khoản sử dụng *</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="buttons">
+                        <input type="submit" value="Đăng ký">
+                        <input type="reset" value="Nhập lại">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <div id="navigation">
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li class="selected"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div id="connect">
+                    <h2>Connect with us:</h2>
+                    <a href="#" class="twitter"></a>
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="googleplus"></a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div id="posts">
+                    <h2>Placeholder</h2>
+                    <ul>
+                        <li>
+                            <h5>Title Sample One</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="more">Read more</a>
+                        </li>
+                        <li>
+                            <h5>Title Sample One</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="more">Read more</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn2">View More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div>
+            <ul id="featured">
+                <li><a href="#" class="home"></a><p>Thông tin giới thiệu website.</p></li>
+                <li><a href="#" class="bell"></a><p>Thông tin giới thiệu website.</p></li>
+                <li><a href="#" class="globe"></a><p>Thông tin giới thiệu website.</p></li>
+                <li><a href="#" class="pencil"></a><p>Thông tin giới thiệu website.</p></li>
+            </ul>
+            <p id="footnote">© Copyright © 2011. Company name all rights reserved</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
