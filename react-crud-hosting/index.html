@@ -6,12 +6,19 @@
   <meta name="description" content="Ứng dụng quản lý người dùng bằng React - CRUD, tìm kiếm, thêm, sửa và xóa.">
   <title>Quản lý người dùng | React CRUD</title>
   <link rel="stylesheet" href="./css/style.css">
+  <!-- React và ReactDOM được tải từ CDN nên cần kết nối Internet. -->
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-  <div id="root"></div>
-  <script type="text/babel" data-presets="env,react" src="./js/app.jsx"></script>
+  <div id="root">
+    <main class="app-shell">
+      <section class="panel state-message">
+        Đang khởi động ứng dụng React... Nếu dòng này không biến mất, hãy kiểm tra kết nối Internet và Console (F12).
+      </section>
+    </main>
+  </div>
+  <!-- app.js đã được biên dịch từ app.jsx, không cần Babel khi chạy. -->
+  <script src="./js/app.js"></script>
 </body>
 </html>
